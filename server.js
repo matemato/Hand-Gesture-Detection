@@ -8,7 +8,19 @@ app.use(express.static('build'))
 app.get('/press', (req, res) =>{
     console.log("header:", req.headers.method)
     const childPyhton = spawn('python', ['mediaController.py', req.headers.method, req.headers.action]);
+  
+    childPyhton.stdout.on('data', (data) => {
+      console.log(`stdout: ${data}`);
+    });
     
+    childPyhton.stderr.on('data', (data) => {
+      console.error(`stderr: ${data}`);
+    });
+    
+    childPyhton.on('close', (code) => {
+      console.log(`child process exited with code ${code}`);
+    });
+  
     res.send('ok')
   })
 

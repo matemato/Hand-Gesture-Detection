@@ -71,20 +71,20 @@ function App() {
           const gestureName = gesture.gestures[0].name;
       
           console.log(gestureName);
-          if (gestureName === 'play') videoPlayerRef.current.handlePlay();
-          else if (gestureName === 'pause') videoPlayerRef.current.handlePause();
-          else if (gestureName === 'volumeDown') videoPlayerRef.current.handleVolumeChange(-0.01);
-          else if (gestureName === 'volumeUp') videoPlayerRef.current.handleVolumeChange(0.01);
-          else if (gestureName === 'mute') videoPlayerRef.current.handleMuted();
-          else if (gestureName === 'next' && !blocked) videoPlayerRef.current.nextVideo();
-          else if (gestureName === 'previous' && !blocked) videoPlayerRef.current.previousVideo();
-          // if (gestureName === 'play' && !blocked) press(0xB3, gestureName);
-          // else if (gestureName === 'pause' && !blocked) press(0xB3, gestureName);
-          // else if (gestureName === 'volumeDown') press(0xAE, gestureName);
-          // else if (gestureName === 'volumeUp') press(0xAF, gestureName);
-          // else if (gestureName === 'mute' && !blocked) press(0xAD, gestureName);
-          // else if (gestureName === 'next' && !blocked) press(0xB0, gestureName)
-          // else if (gestureName === 'previous' && !blocked) press(0xB1, gestureName)
+          // if (gestureName === 'play') videoPlayerRef.current.handlePlay();
+          // else if (gestureName === 'pause') videoPlayerRef.current.handlePause();
+          // else if (gestureName === 'volumeDown') videoPlayerRef.current.handleVolumeChange(-0.01);
+          // else if (gestureName === 'volumeUp') videoPlayerRef.current.handleVolumeChange(0.01);
+          // else if (gestureName === 'mute') videoPlayerRef.current.handleMuted();
+          // else if (gestureName === 'next' && !blocked) videoPlayerRef.current.nextVideo();
+          // else if (gestureName === 'previous' && !blocked) videoPlayerRef.current.previousVideo();
+          if (gestureName === 'play' && !blocked) press(0xB3, gestureName);
+          else if (gestureName === 'pause' && !blocked) press(0xB3, gestureName);
+          else if (gestureName === 'volumeDown') press(0xAE, gestureName);
+          else if (gestureName === 'volumeUp') press(0xAF, gestureName);
+          else if (gestureName === 'mute' && !blocked) press(0xAD, gestureName);
+          else if (gestureName === 'next' && !blocked) press(0xB0, gestureName)
+          else if (gestureName === 'previous' && !blocked) press(0xB1, gestureName)
           // console.log(blocked)
           if (['play', 'pause', 'mute', 'next', 'previous'].includes(gestureName) && !blocked) {
             blocked = true;

@@ -1,5 +1,6 @@
 import sys;
 import asyncio
+
 from pynput.keyboard import Controller, KeyCode;
 from winrt.windows.media.control import \
     GlobalSystemMediaTransportControlsSessionManager as MediaManager
@@ -7,6 +8,14 @@ from winrt.windows.media.control import \
 async def get_media_session():
     sessions = await MediaManager.request_async()
     current_session = sessions.get_current_session()
+
+    # ss = sessions.get_sessions()
+
+    # for s in ss:
+    #     print("hey")
+    #     print(s.source_app_user_model_id)
+
+    print(current_session.source_app_user_model_id)
 
     return current_session
 
