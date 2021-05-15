@@ -15,7 +15,7 @@ async def get_media_session():
     #     print("hey")
     #     print(s.source_app_user_model_id)
 
-    print(current_session.source_app_user_model_id)
+    # print(current_session.source_app_user_model_id)
 
     return current_session
 

@@ -18,10 +18,27 @@ import { previousGesture } from './previous';
 let blocked = false;
 
 function App() {
+
   const webcamRef = useRef(null);
   const canvasRef = useRef(null);
   const videoPlayerRef = useRef(null);
   var prevGesture = "";
+  var camera = false
+
+
+  const handleInputChange = (event) =>{
+    const target = event.target;
+    // const value = target.type === 'checkbox' ? target.checked : target.value;
+    if (target.name === 'Camera') {
+      camera = !camera;
+    }
+    if (camera){
+      webcamRef.current.video.style.visibility = 'visible'
+    }
+    else {
+      webcamRef.current.video.style.visibility = 'hidden'
+    }
+  }
 
   const runHandpose = async () => {
     const net = await handpose.load();
@@ -94,6 +111,7 @@ function App() {
           }
           // console.log("prev: ", prevGesture, " now: ", gestureName)
           // prevGesture = gestureName;
+          console.log(camera)
         }
         console.log(gesture);
       }
@@ -107,7 +125,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <Webcam
+        <Webcam
           ref={webcamRef}
           style={{
             position: "absolute",
@@ -115,27 +133,48 @@ function App() {
             marginRight: "auto",
             left: 0,
             right: '800px',
+            bottom: '220px',
             textAlign: "center",
             zindex: 9,
-            width: 0,
-            height: 0,
+            width: 640,
+            height: 480,
+            visibility: 'hidden'
           }}
         />
-
+      
         <canvas
           ref={canvasRef}
           style={{
+            border: "1px solid #000000",
             position: "absolute",
             marginLeft: "auto",
             marginRight: "auto",
             left: 0,
             right: '800px',
+            bottom: '220px',
             textAlign: "center",
             zindex: 9,
             width: 640,
             height: 480,
           }}
         />
+        <label style={{
+              position: "absolute",
+              marginLeft: "auto",
+              marginRight: "auto",
+              left: '25%',
+              bottom: '150px'
+            }}>
+          <p style={{
+            fontSize: '25px'
+          }}>Camera:&nbsp;&nbsp;&nbsp;
+          <input
+            name="Camera"
+            type="checkbox"
+            // checked={camera}
+            onChange={handleInputChange}/>
+            </p>
+        </label>
       <VideoPlayer
         ref={videoPlayerRef}
       />
