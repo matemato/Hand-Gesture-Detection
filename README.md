@@ -9,6 +9,7 @@ Ves projekt je bil narejen z naslednjimi zahtevami (najverjetneje deluje vse tud
 - Node version: 15.12.0 https://nodejs.org/en/download/ (npm je že vključen)
 - npm version: 7.6.3
 - Uporabniški vmesnik je optimiziran za ločljivost 1920x1080.
+- Testirano na windows operacijskem sistemu.
 
 ## 2. Začetek in uporaba:
 
