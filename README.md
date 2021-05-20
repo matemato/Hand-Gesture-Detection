@@ -49,7 +49,7 @@ Program podpira kar 7 gest rok. Geste so:
 
 *Kamera na spletni strani ni zrcaljena, to pomeni da morate za gesto `Next` kazati z roko v desno in za `previous` v levo, vendar se na spletni strani prikaže obratno.
 
-## 4. Želimo vam uspešno upravljanje medijev s ročnimi gestami!
+## 4. Želimo vam uspešno upravljanje medijev z ročnimi gestami!
 
 ## 5. Links:
 
