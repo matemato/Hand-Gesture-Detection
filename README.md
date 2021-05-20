@@ -2,7 +2,7 @@
 
 ## 1. Zahteve:
 
-Ves projekt je bil narejen z naslednjimi zahtevami:
+Ves projekt je bil narejen z naslednjimi zahtevami (najverjetneje deluje vse tudi na najnovejših verzijah):
 
 - Python version: 3.9.4  https://www.python.org/downloads/ (pip je že vključen)
 - pip version: 21.1
