@@ -47,5 +47,13 @@ Program podpira kar 7 gest rok (zato je večja možnost, da bo kdaj zaznal napa�
 
 *Kamera na strani ni zrcaljena, to pomeni da morate za Next pokazati v desno in previous v levo, vendar se na spletni strani prikaže obratno.
 
-## 4. Želim vam uspešno upravljanje medijev s hand gesturami!
+## 4. Želimo vam uspešno upravljanje medijev s hand gesturami!
+
+## 5. Links:
+
+FingerPose:
+https://github.com/andypotato/fingerpose
+
+TensorflowJS handpose:
+https://github.com/tensorflow/tfjs-models/tree/master/handpose
 
