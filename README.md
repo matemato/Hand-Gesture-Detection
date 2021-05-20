@@ -13,7 +13,7 @@ Ves projekt je bil narejen z naslednjimi zahtevami:
 
 Ko imate vse zahteve izpolnjene, morate prvič, ko želite pognati program narediti naslednje:
 
-1. Odprete ukazno vrstico (cmd.exe) in se v ukazni vrstici prestavite v mapo handpose.
+1. Odprete ukazno vrstico (cmd.exe) in se v ukazni vrstici prestavite v mapo `Hand-Gesture-Detection`.
 2. Napišete komando `npm -i`.
 3. Ko se inštalacija dokonča, program poženete s komando `npm run both`. Če dobite kakšne errorje, da manjka kak dependency, vpišite komando za inštaliranje manjkajočih dependencijev, ki vam jo vrne error in potem ponovno `npm run both`.
 4. Ko je program pognan (v ukazni vrstici se vam izpiše `listening on port 3000`), odprete brskalnik (najbolje chrome) in grete na naslov: `http://localhost:3000`
