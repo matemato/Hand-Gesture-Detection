@@ -13,16 +13,16 @@ Ves projekt je bil narejen z naslednjimi zahtevami:
 
 Ko imate vse zahteve izpolnjene, morate prvič, ko želite pognati program narediti naslednje:
 
-1. Odprete ukazno vrstico (cmd.exe) in se prestavite v mapo handpose.
+1. Odprete ukazno vrstico (cmd.exe) in se v ukazni vrstici prestavite v mapo handpose.
 2. Napišete komando `npm -i`.
-3. Ko se inštalacija dokonča, program poženete s komando `npm run both`. Če dobite kakšne errorje, da manjka kak dependency, vpišite komando, ki vam jo vrne error.
+3. Ko se inštalacija dokonča, program poženete s komando `npm run both`. Če dobite kakšne errorje, da manjka kak dependency, vpišite komando za inštaliranje manjkajočih dependencijev, ki vam jo vrne error in potem ponovno `npm run both`.
 4. Ko je program pognan (v ukazni vrstici se vam izpiše `listening on port 3000`), odprete brskalnik (najbolje chrome) in grete na naslov: `http://localhost:3000`
 
-Na spletni strani se vam prikaže okno na levi strani, kjer se izvaja detekcija roke. Lahko prikažete celotno kamera ali pa gledate samo zaznavo roke. Na desni strani je testni video, katerega lahko upravljate z gesto rok (najprej kliknite play na video in potem, ga lahko manipulirate z roko). Program pa ne deluje samo na tem testnem videu. Program deluje nad kateri koli programom, ki ima izpolnjene zahteve za media keys. Na primer če obiščete `www.youtube.com` in izberete poljuben posnetek, bo detekcija gest delovala nad tem videom. Testirano je tudi na `YouTube Music Desktop App` vse deluje kot bi moralo.
+Na spletni strani se vam prikaže okno na levi strani, kjer se izvaja detekcija roke. Lahko prikažete celotno kamero ali pa prikažete samo zaznavo roke. Na desni strani je testni video, katerega lahko upravljate z gesto rok (najprej kliknite play na video in potem, ga lahko manipulirate z roko). Program pa ne deluje samo na tem testnem videu. Program deluje nad kateri koli programom, ki ima izpolnjene zahteve za media keys. Na primer če obiščete `www.youtube.com` in izberete poljuben posnetek, bo detekcija gest delovala nad tem videom. Testirano je tudi na `YouTube Music Desktop App`, najverjeneje pa deluje tudi na aplikacijah kot so `Spotify`...
 
 ## 3. Geste:
 
-Program podpira kar 7 gest rok (zato je večja možnost, da bo kdaj zaznal napačno). Geste so:
+Program podpira kar 7 gest rok. Geste so:
 
 #### 1. Play 
 ![Alt text](HandGestures/Play/playGestureCam.png) ![Alt text](HandGestures/Play/playGestureNoCam.png)
@@ -45,7 +45,7 @@ Program podpira kar 7 gest rok (zato je večja možnost, da bo kdaj zaznal napa�
 #### 7. Previous*
 ![Alt text](HandGestures/Previous/previousGestureCam.png) ![Alt text](HandGestures/Previous/previousGestureNoCam.png)
 
-*Kamera na strani ni zrcaljena, to pomeni da morate za Next pokazati v desno in previous v levo, vendar se na spletni strani prikaže obratno.
+*Kamera na spletni strani ni zrcaljena, to pomeni da morate za gesto `Next` kazati z roko v desno in za `previous` v levo, vendar se na spletni strani prikaže obratno.
 
 ## 4. Želimo vam uspešno upravljanje medijev s hand gesturami!
 
