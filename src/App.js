@@ -1,19 +1,19 @@
-import React, {useRef} from 'react';
-import * as tf from "@tensorflow/tfjs";
 import * as handpose from "@tensorflow-models/handpose";
 import * as fp from "fingerpose";
+import React, { useRef } from 'react';
 import Webcam from "react-webcam";
 import './App.css';
-import VideoPlayer from './videoPlayer';
-import {drawHand} from "./utilities";
-import { playGesture } from "./play";
-import { pauseGesture } from './pause';
-import { volumeUpGesture } from './volumeUp';
-import { volumeDownGesture } from './volumeDown';
 import { muteGesture } from './mute';
-import { press } from './press'
 import { nextGesture } from './next';
+import { pauseGesture } from './pause';
+import { playGesture } from "./play";
+import { press } from './press';
 import { previousGesture } from './previous';
+import { drawHand } from "./utilities";
+import VideoPlayer from './videoPlayer';
+import { volumeDownGesture } from './volumeDown';
+import { volumeUpGesture } from './volumeUp';
+import * as tf from "@tensorflow/tfjs";
 
 let blocked = false;
 
@@ -22,9 +22,7 @@ function App() {
   const webcamRef = useRef(null);
   const canvasRef = useRef(null);
   const videoPlayerRef = useRef(null);
-  var prevGesture = "";
   var camera = false
-
 
   const handleInputChange = (event) =>{
     const target = event.target;
@@ -109,9 +107,6 @@ function App() {
               blocked = false;
             }, 2000)
           }
-          // console.log("prev: ", prevGesture, " now: ", gestureName)
-          // prevGesture = gestureName;
-          console.log(camera)
         }
         console.log(gesture);
       }
@@ -138,7 +133,7 @@ function App() {
             zindex: 9,
             width: 640,
             height: 480,
-            visibility: 'hidden'
+            visibility: 'hidden',
           }}
         />
       

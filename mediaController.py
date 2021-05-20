@@ -45,7 +45,7 @@ def main():
                 print("Skipping: ->", title if title != "" else "Unknown", "<- by ->", artist if artist != "" else "Unknown", "<-")
                 session.try_skip_next_async()
             elif sys.argv[2] == 'previous':
-                print("Going back.")
+                print("Playing previous song:")
                 session.try_skip_previous_async()
         else: 
             print(int(sys.argv[1]))

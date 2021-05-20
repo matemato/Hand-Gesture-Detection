@@ -7,13 +7,13 @@ export const muteGesture = new GestureDescription('mute');
 muteGesture.addCurl(Finger.Thumb, FingerCurl.NoCurl, 1.0);
 muteGesture.addCurl(Finger.Thumb, FingerCurl.HalfCurl, 1.0);
 
-muteGesture.addCurl(Finger.Index, FingerCurl.FullCurl, 1.0);
+muteGesture.addCurl(Finger.Index, FingerCurl.FullCurl, 1.5);
 
-muteGesture.addCurl(Finger.Middle, FingerCurl.FullCurl, 1.0);
+muteGesture.addCurl(Finger.Middle, FingerCurl.FullCurl, 0.5);
 
-muteGesture.addCurl(Finger.Ring, FingerCurl.FullCurl, 1.0);
+muteGesture.addCurl(Finger.Ring, FingerCurl.FullCurl, 0.5);
 
-muteGesture.addCurl(Finger.Pinky, FingerCurl.FullCurl, 1.0);
+muteGesture.addCurl(Finger.Pinky, FingerCurl.FullCurl, 1.5);
 
 // Directions
 
