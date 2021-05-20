@@ -15,9 +15,10 @@ Ves projekt je bil narejen z naslednjimi zahtevami:
 Ko imate vse zahteve izpolnjene, morate prvič, ko želite pognati program narediti naslednje:
 
 1. Odprete ukazno vrstico in se v ukazni vrstici prestavite v mapo `Hand-Gesture-Detection`.
-2. Napišete ukaz `npm install`.
-3. Ko se inštalacija dokonča, program poženete s komando `npm run both`. Če dobite kakšne errorje, da manjka kak dependency, vpišite ukaz za inštaliranje manjkajočih dependencijev, ki vam jo vrne error in potem ponovno poženite ukaz `npm run both`.
-4. Ko je program pognan (v ukazni vrstici se vam izpiše `listening on port 3000`), odprete brskalnik (najbolje chrome) in grete na naslov: `http://localhost:3000`
+2. Napišete ukaz `pip install -r requirements.txt`, za inštalacijo python dependencies.
+3. Napišete ukaz `npm install`.
+4. Ko se inštalacija dokonča, program poženete s komando `npm run both`. Če dobite kakšne errorje, da manjka kak dependency, vpišite ukaz za inštaliranje manjkajočih dependencijev, ki vam jo vrne error in potem ponovno poženite ukaz `npm run both`.
+5. Ko je program pognan (v ukazni vrstici se vam izpiše `listening on port 3000`), odprete brskalnik (najbolje chrome) in grete na naslov: `http://localhost:3000`
 
 Na spletni strani se vam prikaže okno na levi strani, kjer se izvaja detekcija roke. Lahko prikažete kamero ali pa samo zaznavo roke. Na desni strani je testni video, katerega lahko upravljate z gesto rok (najprej kliknite play na video in potem, ga lahko manipulirate z roko). Program pa ne deluje samo na tem testnem videu. Program deluje nad kateri koli programom, ki ima izpolnjene zahteve za media keys. Na primer če obiščete `www.youtube.com` in izberete poljuben posnetek, bo detekcija gest delovala nad tem videom. Testirano je tudi na `YouTube Music Desktop App`, najverjeneje pa deluje tudi na aplikacijah kot so `Spotify`...
 
