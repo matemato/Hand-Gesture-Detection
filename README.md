@@ -8,13 +8,14 @@ Ves projekt je bil narejen z naslednjimi zahtevami:
 - pip version: 21.1
 - Node version: 15.12.0 https://nodejs.org/en/download/ (npm je že vključen)
 - npm version: 7.6.3
+- Uporabniški vmesnik je optimiziran za ločljivost 1920x1080.
 
 ## 2. Začetek in uporaba:
 
 Ko imate vse zahteve izpolnjene, morate prvič, ko želite pognati program narediti naslednje:
 
-1. Odprete ukazno vrstico (cmd.exe) in se v ukazni vrstici prestavite v mapo `Hand-Gesture-Detection`.
-2. Napišete ukaz `npm -i`.
+1. Odprete ukazno vrstico in se v ukazni vrstici prestavite v mapo `Hand-Gesture-Detection`.
+2. Napišete ukaz `npm install`.
 3. Ko se inštalacija dokonča, program poženete s komando `npm run both`. Če dobite kakšne errorje, da manjka kak dependency, vpišite ukaz za inštaliranje manjkajočih dependencijev, ki vam jo vrne error in potem ponovno poženite ukaz `npm run both`.
 4. Ko je program pognan (v ukazni vrstici se vam izpiše `listening on port 3000`), odprete brskalnik (najbolje chrome) in grete na naslov: `http://localhost:3000`
 
