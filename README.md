@@ -4,7 +4,7 @@
 
 Ves projekt je bil narejen z naslednjimi zahtevami (najverjetneje deluje vse tudi na najnovejših verzijah):
 
-- Python version: 3.9.4  https://www.python.org/downloads/ (pip je že vključen)
+- Python version: 3.9.4  https://www.python.org/downloads/ (pip je že vključen, potrebno ga je dodati v path)
 - pip version: 21.1
 - Node version: 15.12.0 https://nodejs.org/en/download/ (npm je že vključen)
 - npm version: 7.6.3
